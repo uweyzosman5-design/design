@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inglês para Todos — Aprende inglês com professores que falam a tua língua</title>
+  <meta name="description" content="Escola online de inglês para falantes de português. Mais de 100 aulas, quizzes e exames de nivelamento. Começa grátis com a aula de teste — sem e-mail e sem registo." />
+  <meta name="theme-color" content="#f7f2ea" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Inglês para Todos — Aprende inglês de verdade" />
+  <meta property="og:description" content="Mais de 100 aulas, quizzes e exames de nível desenhados para falantes de português. Começa agora com a aula de teste gratuita." />
+  <meta property="og:locale" content="pt_MZ" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ============ ATMOSFERA DE FUNDO ============ -->
+  <div class="atmosphere" aria-hidden="true">
+    <canvas id="atmosphere-canvas"></canvas>
+    <div class="atmo-orb o1" data-parallax="0.06"></div>
+    <div class="atmo-orb o2" data-parallax="-0.04"></div>
+    <div class="atmo-orb o3" data-parallax="0.05"></div>
+    <div class="atmo-grain"></div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <a href="#conteudo" class="skip-link">Saltar para o conteúdo</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#inicio" class="brand" data-scroll aria-label="Inglês para Todos — página inicial">
+          <span class="brand-mark" aria-hidden="true">iT</span>
+          <span class="brand-text">
+            <strong>Inglês<span> para Todos</span></strong>
+            <small>do zero ao avançado</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+          <a href="#inicio" data-scroll class="nav-link is-active">Início</a>
+          <a href="#funcionalidades" data-scroll class="nav-link">Funcionalidades</a>
+          <a href="#planos" data-scroll class="nav-link">Licenças</a>
+          <a href="#avaliacoes" data-scroll class="nav-link">Avaliações</a>
+          <a href="#faq" data-scroll class="nav-link">FAQ</a>
+          <a href="#contactos" data-scroll class="nav-link">Contactos</a>
+          <a href="#inicio" class="btn nav-cta" data-open-test data-scroll>Começar Grátis</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ 1. HERO ============ -->
+    <section id="inicio" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Escola online · Moçambique</p>
+
+          <h1 class="hero-title reveal" data-delay="70">
+            Aprende inglês <em>de verdade</em> — no teu ritmo, do zero ao avançado.
+          </h1>
+
+          <p class="hero-sub reveal" data-delay="140">
+            Mais de 100 aulas, quizzes, testes e exames de nivelamento pensados para quem fala
+            português. Sem e-mail, sem registo: abre a aula de teste e descobre o teu nível em 3 minutos.
+          </p>
+
+          <div class="hero-actions reveal" data-delay="200">
+            <button class="btn btn-primary btn-lg" data-open-test id="heroStart">
+              Criar Conta Grátis
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <a href="#planos" class="btn btn-ghost btn-lg" data-scroll>Ver planos</a>
+          </div>
+
+          <ul class="hero-trust reveal" data-delay="260">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Teste grátis imediato</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Sem cartão de crédito</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> M-Pesa &amp; e-Mola</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="160">
+          <div class="visual-panel">
+            <div class="app-card">
+              <div class="app-topbar">
+                <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="app-title">Aula 01 · Apresentações</span>
+                <span class="app-badge">A1</span>
+              </div>
+
+              <div class="app-progress"><span style="width:64%"></span></div>
+
+              <p class="app-question">Choose the correct option:</p>
+              <p class="app-sentence">“Hi, I <em>___</em> Ana. Nice to meet you!”</p>
+
+              <div class="app-options">
+                <span class="opt">am</span>
+                <span class="opt is-correct">is</span>
+                <span class="opt">are</span>
+                <span class="opt">be</span>
+              </div>
+
+              <div class="app-feedback">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Muito bem! +10 pontos
+              </div>
+
+              <div class="app-footer">
+                <span class="pill">3 min</span>
+                <span class="pill">8 perguntas</span>
+                <span class="pill gold">Nivelamento</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card fc-1">
+            <span class="fc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            </span>
+            <span><strong>Nível B1</strong><small>desbloqueado hoje</small></span>
+          </div>
+
+          <div class="float-card fc-2">
+            <span class="fc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </span>
+            <span><strong>100+ aulas</strong><small>vídeo, áudio e PDF</small></span>
+          </div>
+
+          <div class="float-card fc-3">
+            <span class="fc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 15 9l7 .6-5.3 4.6 1.6 6.8L12 17.5 5.7 21l1.6-6.8L2 9.6 9 9z"/></svg>
+            </span>
+            <span><strong>4.9 / 5</strong><small>3.500+ alunos</small></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span class="marquee-item">100+ aulas completas <i></i></span>
+          <span class="marquee-item">Quizzes interativos <i></i></span>
+          <span class="marquee-item">Exames de nivelamento <i></i></span>
+          <span class="marquee-item">Níveis A1 → B2 <i></i></span>
+          <span class="marquee-item">M-Pesa &amp; e-Mola <i></i></span>
+          <span class="marquee-item">Estudo no telemóvel <i></i></span>
+          <span class="marquee-item">100+ aulas completas <i></i></span>
+          <span class="marquee-item">Quizzes interativos <i></i></span>
+          <span class="marquee-item">Exames de nivelamento <i></i></span>
+          <span class="marquee-item">Níveis A1 → B2 <i></i></span>
+          <span class="marquee-item">M-Pesa &amp; e-Mola <i></i></span>
+          <span class="marquee-item">Estudo no telemóvel <i></i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. FUNCIONALIDADES ============ -->
+    <section id="funcionalidades" class="section">
+      <div class="container">
+        <div class="features-intro">
+          <header class="section-head">
+            <p class="eyebrow reveal">Funcionalidades</p>
+            <h2 class="section-title reveal" data-delay="60">
+              Aprende inglês online com <em>professores</em> que explicam em português
+            </h2>
+          </header>
+          <p class="intro-note reveal" data-delay="120">
+            Material actualizado, aulas em vídeo, áudio nativo e exercícios interactivos. Tudo
+            organizado por níveis, para saberes sempre qual é o próximo passo — sem perder tempo
+            com o que já dominas.
+          </p>
+        </div>
+
+        <ul class="stats reveal">
+          <li class="stat-card">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </span>
+            <span class="stat-value">100+</span>
+            <span class="stat-label">Aulas completas em vídeo, áudio e PDF</span>
+          </li>
+          <li class="stat-card">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <span class="stat-value">3.500+</span>
+            <span class="stat-label">Alunos activos em Moçambique</span>
+          </li>
+          <li class="stat-card">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2z"/><path d="M17 3h-4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></svg>
+            </span>
+            <span class="stat-value">300+</span>
+            <span class="stat-label">Quizzes, testes e exames corrigidos</span>
+          </li>
+        </ul>
+
+        <div class="features-grid">
+          <article class="feature-card span-4 tint-lavender reveal">
+            <span class="feature-num" aria-hidden="true">01</span>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7M9 11h5"/></svg>
+            </span>
+            <h3>Mais de 100 aulas completas</h3>
+            <p>
+              Do alfabeto e pronúncia às conversas avançadas. Cada aula inclui vídeo, áudio nativo,
+              vocabulário essencial e um PDF para descarregares e revisares offline.
+            </p>
+            <span class="feature-tag">A1 → B2</span>
+          </article>
+
+          <article class="feature-card span-2 tint-blush reveal" data-delay="60">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </span>
+            <h3>Quizzes interactivos</h3>
+            <p>Correção imediata e explicação da resposta. Aprende com o erro.</p>
+            <span class="feature-tag">300+ exercícios</span>
+          </article>
+
+          <article class="feature-card span-3 reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6v4H9z"/><path d="M6 6h12v16H6z"/><path d="M9 11h6M9 15h6M9 19h3"/></svg>
+            </span>
+            <h3>Testes por módulo</h3>
+            <p>No final de cada módulo, um teste valida o que aprendeste. Só avanças quando estiveres realmente pronto.</p>
+            <span class="feature-tag">Avaliação contínua</span>
+          </article>
+
+          <article class="feature-card span-3 tint-sand reveal" data-delay="60">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.9-1.7 7.6 5.5-3.2 5.5 3.2-1.7-7.6"/></svg>
+            </span>
+            <h3>Exames de nivelamento</h3>
+            <p>Testes completos que definem exactamente onde começas — sem repetir o que já sabes.</p>
+            <span class="feature-tag">A1 · A2 · B1 · B2</span>
+          </article>
+
+          <article class="feature-card span-2 tint-plum reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 4-6"/></svg>
+            </span>
+            <h3>Progresso em tempo real</h3>
+            <p>Painel pessoal com aulas concluídas, taxa de acerto e sequência de estudo.</p>
+            <span class="feature-tag">Painel do aluno</span>
+          </article>
+
+          <article class="feature-card span-4 reveal" data-delay="60">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            </span>
+            <h3>Funciona no telemóvel</h3>
+            <p>
+              Estuda no chapa, no intervalo ou em casa. As aulas continuam de onde paraste, mesmo
+              com internet lenta — e o material em PDF fica disponível para leres offline.
+            </p>
+            <span class="feature-tag">Offline-ready</span>
+          </article>
+        </div>
+
+        <div class="feature-banner reveal">
+          <div>
+            <h3>Não sabes por onde começar?</h3>
+            <p>Faz o teste de nivelamento gratuito e recebe o teu plano de estudo recomendado em 3 minutos.</p>
+          </div>
+          <button class="btn btn-primary" data-open-test>Fazer teste grátis</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. PLANOS ============ -->
+    <section id="planos" class="section">
+      <div class="container">
+        <div class="plans-head">
+          <header class="section-head">
+            <p class="eyebrow reveal">Licenças e Planos</p>
+            <h2 class="section-title reveal" data-delay="60">
+              Um preço justo para <em>cada objectivo</em>
+            </h2>
+            <p class="section-sub reveal" data-delay="120">
+              Paga em Meticais, com M-Pesa, e-Mola ou cartão. Sem contratos e sem taxas escondidas.
+            </p>
+          </header>
+          <p class="head-aside reveal" data-delay="160">
+            Todos os planos incluem acesso ao painel de progresso e suporte em português.
+          </p>
+        </div>
+
+        <div class="plans-grid">
+          <!-- FREE -->
+          <article class="plan-card reveal">
+            <div class="plan-head">
+              <h3>Plano Grátis de Teste</h3>
+              <p class="plan-desc">Para experimentar antes de decidir.</p>
+            </div>
+            <p class="plan-price"><span class="amount">0</span> <span class="cur">MT</span></p>
+            <p class="plan-period">Acesso imediato · sem cartão</p>
+            <ul class="plan-features">
+              <li>Aula de teste de nivelamento</li>
+              <li>Resultado do teu nível em 3 min</li>
+              <li>0 aulas completas incluídas</li>
+              <li>Pré-visualização da plataforma</li>
+            </ul>
+            <button class="btn btn-lilac btn-block" data-open-test>Começar grátis</button>
+          </article>
+
+          <!-- ANNUAL (destaque) -->
+          <article class="plan-card plan-featured reveal" data-delay="60">
+            <span class="plan-ribbon">Melhor valor · poupa 67%</span>
+            <div class="plan-head">
+              <h3>Plano Anual</h3>
+              <p class="plan-desc">Para quem quer mesmo aprender.</p>
+            </div>
+            <p class="plan-price"><span class="amount">1.000</span> <span class="cur">MT</span></p>
+            <p class="plan-period">por ano · equivale a 83 MT/mês</p>
+            <ul class="plan-features">
+              <li>Tudo do plano Mensal</li>
+              <li><strong>12 meses</strong> de acesso completo</li>
+              <li>Suporte prioritário</li>
+              <li>Certificado de conclusão</li>
+              <li>Novas aulas incluídas</li>
+            </ul>
+            <button class="btn btn-lilac btn-block" data-checkout="anual">Escolher Anual</button>
+          </article>
+
+          <!-- MONTHLY -->
+          <article class="plan-card reveal" data-delay="120">
+            <div class="plan-head">
+              <h3>Plano Mensal</h3>
+              <p class="plan-desc">Flexibilidade total, mês a mês.</p>
+            </div>
+            <p class="plan-price"><span class="amount">250</span> <span class="cur">MT</span></p>
+            <p class="plan-period">por mês · cancela quando quiseres</p>
+            <ul class="plan-features">
+              <li>Acesso total às <strong>100+ aulas</strong></li>
+              <li>Quizzes, testes e exames de nível</li>
+              <li>Material em vídeo, áudio e PDF</li>
+              <li>Painel de progresso pessoal</li>
+              <li>Suporte por WhatsApp</li>
+            </ul>
+            <button class="btn btn-lilac btn-block" data-checkout="mensal">Escolher Mensal</button>
+          </article>
+        </div>
+
+        <p class="plans-note reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Pagamento seguro via M-Pesa, e-Mola e cartão de crédito. O acesso é libertado imediatamente após a confirmação.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 4. AVALIAÇÕES ============ -->
+    <section id="avaliacoes" class="section">
+      <div class="container">
+        <div class="reviews-head">
+          <header class="section-head">
+            <p class="eyebrow reveal">Avaliações de Clientes</p>
+            <h2 class="section-title reveal" data-delay="60">
+              Alunos reais, <em>resultados reais</em>
+            </h2>
+          </header>
+          <div class="rating-chip reveal" data-delay="120">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <b>4,9</b>
+            <span>em mais de 3.500 alunos</span>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <figure class="review-card reveal">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>Comecei do zero, sem saber dizer uma frase completa. Em três meses já consigo atender clientes estrangeiros na loja onde trabalho.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">AM</span><span><strong>Ana Machava</strong><small>Maputo · aluna há 5 meses</small></span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal" data-delay="60">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>O teste de nivelamento é excelente. Descobri que já era A2 e não perdi tempo com o básico. As aulas são directas ao ponto.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">CN</span><span><strong>Carlos Nhampossa</strong><small>Matola · aluno há 8 meses</small></span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal" data-delay="120">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>Paguei com M-Pesa e o acesso abriu logo de seguida. Os quizzes com explicação fazem toda a diferença — aprendo com os erros.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">FS</span><span><strong>Fátima Sitoe</strong><small>Beira · aluna há 3 meses</small></span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>Uso no telemóvel no chapa, 15 minutos por dia. O plano anual saiu mais barato que um mês de explicações.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">JM</span><span><strong>João Mabote</strong><small>Nampula · aluno há 1 ano</small></span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal" data-delay="60">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>Precisava de inglês para entrevistas de emprego. Passei na entrevista e fui contratado. Recomendo sem reservas.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">LT</span><span><strong>Lúcia Tembe</strong><small>Maputo · aluna há 6 meses</small></span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal" data-delay="120">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>O suporte no WhatsApp responde rápido e em português. Nunca fiquei preso numa dúvida por mais de uma hora.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">RC</span><span><strong>Rui Cuna</strong><small>Xai-Xai · aluno há 4 meses</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. FAQ ============ -->
+    <section id="faq" class="section">
+      <div class="container faq-wrap">
+        <header class="section-head">
+          <p class="eyebrow reveal">Perguntas Frequentes</p>
+          <h2 class="section-title reveal" data-delay="60">
+            Ainda tens <em>dúvidas?</em>
+          </h2>
+          <p class="section-sub reveal" data-delay="120">
+            Reunimos as perguntas que os alunos fazem antes de começar. Se ficar alguma em aberto,
+            fala connosco no WhatsApp.
+          </p>
+          <a href="https://wa.me/258872237084?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20plataforma%20Ingl%C3%AAs%20para%20Todos." target="_blank" rel="noopener" class="btn btn-ghost reveal" data-delay="180">
+            Falar com o suporte
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </header>
+
+        <div class="faq-list reveal" data-delay="60">
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+                <span>Como funciona a aula de teste gratuito?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              <p>Podes testar o nivelamento e ver como a plataforma funciona instantaneamente, sem precisar de criar conta com e-mail. Clicas em “Criar Conta Grátis”, respondes a 8 perguntas rápidas e recebes o teu nível (A1 a B2) com o plano de estudo recomendado.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+                <span>Como faço o pagamento via M-Pesa ou e-Mola?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              <p>Selecionas o plano, inseres os teus dados e o número de telefone para efetuar a transação de forma segura. Recebes a confirmação no telemóvel e o acesso é activado automaticamente. Também aceitamos cartão de crédito.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+                <span>Preciso de ter conhecimentos prévios de inglês?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              <p>Não, temos módulos desde o nível totalmente básico até ao avançado. As aulas são explicadas em português, com áudio nativo em inglês e exercícios de pronúncia desde a primeira lição.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+                <span>Como acesso as aulas após o pagamento?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              <p>O acesso é libertado imediatamente na plataforma após a confirmação do pagamento. Recebes também uma mensagem no WhatsApp com o teu código de acesso e o link directo para a primeira aula do teu nível.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CONTACTOS ============ -->
+    <section id="contactos" class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-panel reveal">
+            <p class="eyebrow on-dark">Contactos e Suporte</p>
+            <h2>Estamos aqui para <em>te ajudar</em></h2>
+            <p>
+              Resposta em português, normalmente em menos de 1 hora, de segunda a sábado.
+              Fala connosco por WhatsApp, e-mail ou pelo formulário ao lado.
+            </p>
+
+            <div class="contact-list">
+              <a class="contact-card" href="https://wa.me/258872237084?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20curso%20de%20ingl%C3%AAs." target="_blank" rel="noopener">
+                <span class="contact-icon whatsapp" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.2 5.1 4.4 2.5 1 3 .8 3.5.8.5 0 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-2.9-1.3-4.4C3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20.3 12 20.3z"/></svg>
+                </span>
+                <span class="contact-text"><strong>WhatsApp</strong><small>+258 87 223 7084</small></span>
+                <span class="contact-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <div class="contact-card">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg>
+                </span>
+                <span class="contact-text"><strong>E-mail</strong><small>apoio@inglesparatodos.co.mz</small></span>
+              </div>
+
+              <div class="contact-card">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                </span>
+                <span class="contact-text"><strong>Horário</strong><small>Seg–Sáb · 08h00–20h00</small></span>
+              </div>
+
+              <div class="contact-card">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span class="contact-text"><strong>Onde estamos</strong><small>Maputo, Moçambique · 100% online</small></span>
+              </div>
+            </div>
+
+            <div class="contact-badges">
+              <span>M-Pesa</span>
+              <span>e-Mola</span>
+              <span>Visa</span>
+              <span>Mastercard</span>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" data-delay="80" id="contactForm" novalidate>
+            <h3>Envia-nos uma mensagem</h3>
+            <p class="form-sub">Preenche os campos e continua a conversa no WhatsApp — sem espera por e-mail.</p>
+
+            <div class="field">
+              <label for="cName">Nome</label>
+              <input type="text" id="cName" name="nome" placeholder="O teu nome" autocomplete="name" required />
+              <span class="field-error" data-error-for="cName"></span>
+            </div>
+
+            <div class="field">
+              <label for="cPhone">Número de telefone</label>
+              <input type="tel" id="cPhone" name="telefone" placeholder="+258 84 000 0000" autocomplete="tel" required />
+              <span class="field-error" data-error-for="cPhone"></span>
+            </div>
+
+            <div class="field">
+              <label for="cMessage">Mensagem</label>
+              <textarea id="cMessage" name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+              <span class="field-error" data-error-for="cMessage"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Enviar via WhatsApp
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-fine">Ao enviar, abrimos o WhatsApp com a tua mensagem já escrita. Nada é guardado sem o teu consentimento.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="final-cta reveal">
+          <p class="eyebrow on-dark">Começa hoje</p>
+          <h2>Pronto para dar o <em>próximo passo?</em></h2>
+          <p>Faz o teste de nivelamento gratuito agora e descobre em 3 minutos por onde começar.</p>
+          <div class="final-cta-actions">
+            <button class="btn btn-primary btn-lg" data-open-test>Criar Conta Grátis</button>
+            <a href="https://wa.me/258872237084?text=Ol%C3%A1%21%20Quero%20come%C3%A7ar%20as%20aulas%20de%20ingl%C3%AAs." target="_blank" rel="noopener" class="btn btn-ghost on-dark btn-lg">Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand" data-scroll>
+          <span class="brand-mark" aria-hidden="true">iT</span>
+          <span class="brand-text"><strong>Inglês<span> para Todos</span></strong><small>do zero ao avançado</small></span>
+        </a>
+        <p>Escola online de inglês para falantes de português. 100+ aulas, quizzes e exames de nível — feita em Moçambique.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Navegação do rodapé">
+        <h4>Plataforma</h4>
+        <a href="#inicio" data-scroll>Início</a>
+        <a href="#funcionalidades" data-scroll>Funcionalidades</a>
+        <a href="#planos" data-scroll>Licenças e Planos</a>
+        <a href="#avaliacoes" data-scroll>Avaliações</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Ajuda">
+        <h4>Ajuda</h4>
+        <a href="#faq" data-scroll>Perguntas frequentes</a>
+        <a href="#contactos" data-scroll>Contactos</a>
+        <a href="https://wa.me/258872237084" target="_blank" rel="noopener">Suporte WhatsApp</a>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Pagamentos</h4>
+        <p class="pay-badges">
+          <span class="pay-badge">M-Pesa</span>
+          <span class="pay-badge">e-Mola</span>
+          <span class="pay-badge">Visa</span>
+          <span class="pay-badge">Mastercard</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Inglês para Todos. Todos os direitos reservados.</p>
+      <p>Feito em Moçambique · Pagamentos em Meticais</p>
+    </div>
+
+    <div class="footer-wordmark" aria-hidden="true"><span>Inglês para Todos</span></div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLUTUANTE ============ -->
+  <a class="wa-float" id="waFloat" href="https://wa.me/258872237084?text=Ol%C3%A1%21%20Vi%20o%20site%20do%20Ingl%C3%AAs%20para%20Todos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas." target="_blank" rel="noopener" aria-label="Falar no WhatsApp: abre conversa com o suporte">
+    <span class="wa-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.2 5.1 4.4 2.5 1 3 .8 3.5.8.5 0 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-2.9-1.3-4.4C3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20.3 12 20.3z"/></svg>
+    <span class="wa-label">Suporte</span>
+  </a>
+
+  <!-- ============ MODAL: NIVELAMENTO ============ -->
+  <div class="modal" id="testModal" role="dialog" aria-modal="true" aria-labelledby="testTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" data-close-modal aria-label="Fechar teste de nivelamento">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="test-view" data-view="intro">
+        <span class="modal-kicker">Teste de nivelamento</span>
+        <h2 id="testTitle">Descobre o teu nível de inglês</h2>
+        <p class="modal-sub">8 perguntas rápidas, cerca de 3 minutos. Sem e-mail, sem registo — o resultado aparece imediatamente.</p>
+
+        <ul class="test-points">
+          <li><span>1</span> Escolhe a opção correta em cada pergunta</li>
+          <li><span>2</span> Respondes no teu ritmo, podes voltar atrás</li>
+          <li><span>3</span> Recebes o nível (A1–B2) e o plano recomendado</li>
+        </ul>
+
+        <button class="btn btn-primary btn-block btn-lg" id="testStart">Começar o teste agora</button>
+        <p class="modal-fine">Não guardamos dados pessoais neste teste.</p>
+      </div>
+
+      <div class="test-view" data-view="question" hidden>
+        <div class="test-top">
+          <span class="modal-kicker" id="testCounter">Pergunta 1 de 8</span>
+          <span class="test-pct" id="testPct">12%</span>
+        </div>
+        <div class="test-progress"><span id="testProgressBar" style="width:12%"></span></div>
+
+        <h2 class="test-question" id="testQuestion">—</h2>
+        <div class="test-options" id="testOptions"></div>
+
+        <div class="test-nav">
+          <button class="btn btn-quiet" id="testBack">Voltar</button>
+          <button class="btn btn-primary" id="testNext" disabled>Próxima</button>
+        </div>
+      </div>
+
+      <div class="test-view" data-view="result" hidden>
+        <span class="modal-kicker">Teste concluído</span>
+        <h2>O teu nível é <span class="level-badge" id="levelBadge">A1</span></h2>
+        <p class="modal-sub" id="levelName">Iniciante</p>
+        <p class="level-desc" id="levelDesc">—</p>
+
+        <div class="level-score">
+          <div class="score-ring" id="scoreRing"><span id="scoreText">0/8</span></div>
+          <div>
+            <strong id="scoreLabel">Respostas corretas</strong>
+            <p id="levelAdvice">—</p>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <button class="btn btn-primary btn-block" id="testToPlans">Ver planos recomendados</button>
+          <button class="btn btn-quiet btn-block" id="testRestart">Repetir o teste</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ MODAL: CHECKOUT ============ -->
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel modal-panel-wide" role="document">
+      <button class="modal-close" data-close-modal aria-label="Fechar checkout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="checkout-grid">
+        <form class="checkout-form" id="checkoutForm" novalidate>
+          <span class="modal-kicker">Checkout seguro</span>
+          <h2 id="checkoutTitle">Finalizar subscrição</h2>
+          <p class="modal-sub">Preenche os dados abaixo. O acesso é libertado imediatamente após a confirmação do pagamento.</p>
+
+          <div class="field">
+            <label for="coName">Nome completo <em>*</em></label>
+            <input type="text" id="coName" name="nome" placeholder="Ex.: Ana Machava" autocomplete="name" required />
+            <span class="field-error" data-error-for="coName"></span>
+          </div>
+
+          <div class="field">
+            <label for="coPhone">Número de telefone <em>*</em></label>
+            <input type="tel" id="coPhone" name="telefone" placeholder="+258 84 000 0000" autocomplete="tel" required />
+            <span class="field-hint">O mesmo número usado no M-Pesa / e-Mola.</span>
+            <span class="field-error" data-error-for="coPhone"></span>
+          </div>
+
+          <div class="field">
+            <label for="coType">Tipo de cliente <em>*</em></label>
+            <div class="segmented" role="group" aria-label="Tipo de cliente">
+              <button type="button" class="seg-btn is-active" data-client-type="particular">Particular</button>
+              <button type="button" class="seg-btn" data-client-type="empresa">Empresa</button>
+            </div>
+            <input type="hidden" id="coType" name="tipoCliente" value="particular" />
+          </div>
+
+          <div class="field" id="companyField" hidden>
+            <label for="coCompany">Nome da empresa <em>*</em></label>
+            <input type="text" id="coCompany" name="empresa" placeholder="Ex.: Machava Lda." autocomplete="organization" />
+            <span class="field-error" data-error-for="coCompany"></span>
+          </div>
+
+          <fieldset class="field pay-methods">
+            <legend>Método de pagamento <em>*</em></legend>
+            <div class="pay-grid" id="payGrid">
+              <label class="pay-option">
+                <input type="radio" name="metodo" value="mpesa" checked />
+                <span class="pay-body"><strong>M-Pesa</strong><small>Vodacom</small></span>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="metodo" value="emola" />
+                <span class="pay-body"><strong>e-Mola</strong><small>Movitel</small></span>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="metodo" value="cartao" />
+                <span class="pay-body"><strong>Cartão</strong><small>Visa · Mastercard</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="card-fields" id="cardFields" hidden>
+            <div class="field">
+              <label for="coCard">Número do cartão <em>*</em></label>
+              <input type="text" id="coCard" name="cartao" placeholder="0000 0000 0000 0000" inputmode="numeric" autocomplete="cc-number" maxlength="19" />
+              <span class="field-error" data-error-for="coCard"></span>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="coExp">Validade <em>*</em></label>
+                <input type="text" id="coExp" name="validade" placeholder="MM/AA" inputmode="numeric" autocomplete="cc-exp" maxlength="5" />
+                <span class="field-error" data-error-for="coExp"></span>
+              </div>
+              <div class="field">
+                <label for="coCvc">CVC <em>*</em></label>
+                <input type="text" id="coCvc" name="cvc" placeholder="123" inputmode="numeric" autocomplete="cc-csc" maxlength="4" />
+                <span class="field-error" data-error-for="coCvc"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="check-line">
+              <input type="checkbox" id="coTerms" required />
+              <span>Confirmo os dados e aceito os termos de subscrição. <em>*</em></span>
+            </label>
+            <span class="field-error" data-error-for="coTerms"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="coSubmit">
+            <span id="coSubmitText">Pagar 250 MT</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </button>
+          <p class="form-fine">Demonstração: nenhum pagamento real é processado. Os dados ficam apenas neste navegador.</p>
+        </form>
+
+        <aside class="checkout-summary">
+          <h3>Resumo</h3>
+          <div class="summary-plan">
+            <span class="summary-name" id="summaryPlan">Plano Mensal</span>
+            <span class="summary-desc" id="summaryDesc">Acesso total · 1 mês</span>
+          </div>
+          <dl class="summary-lines">
+            <div><dt>Subtotal</dt><dd id="sumSubtotal">250 MT</dd></div>
+            <div class="summary-total"><dt>Total a pagar</dt><dd id="sumTotal">250 MT</dd></div>
+          </dl>
+          <p class="summary-savings" id="sumSavings" hidden></p>
+          <ul class="summary-perks">
+            <li>✓ Acesso imediato às 100+ aulas</li>
+            <li>✓ Quizzes, testes e exames</li>
+            <li>✓ Suporte por WhatsApp</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="checkout-success" id="checkoutSuccess" hidden>
+        <div class="success-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h2>Pedido registado!</h2>
+        <p>Guarda a referência abaixo. Confirma o pagamento no WhatsApp para libertar o acesso imediatamente.</p>
+        <p class="success-ref">Referência: <strong id="successRef">—</strong></p>
+        <div class="result-actions">
+          <a class="btn btn-primary btn-block" id="successWa" href="https://wa.me/258872237084" target="_blank" rel="noopener">Confirmar no WhatsApp</a>
+          <button class="btn btn-quiet btn-block" data-close-modal>Voltar ao site</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/atmosphere.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
